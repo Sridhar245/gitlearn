@@ -1,0 +1,15 @@
+for i in `cat`
+do
+echo "==$i=="; ssh -q $i uptime;
+done
+
+# for loop for finding uptime of list of servers 
+
+for i in `cat`
+do
+echo "==$i=="; ssh -q $i cat /ete/redhat-release; 
+done
+
+#for loop for finding RHEL release version
+
+
