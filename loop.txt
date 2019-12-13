@@ -1,15 +1,15 @@
 for i in `cat`
 do
-echo "==$i=="; ssh -q $i uptime;
+echo "==$i=="; ssh -q $i uname -a;
 done
 
-# for loop for finding uptime of list of servers 
+# for loop for finding kernel version of list of servers 
 
 for i in `cat`
 do
-echo "==$i=="; ssh -q $i cat /ete/redhat-release; 
+echo "==$i=="; ssh -q $i ps -ef | grep -i pmon; 
 done
 
-#for loop for finding RHEL release version
+#for loop for finding Database servers in list of servers 
 
 
