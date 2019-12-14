@@ -9,3 +9,4 @@ Deleted new line added
 git config --global user.email "xyz@mgamil.com"
 git config --global user.name  "xyz"
 
+# Thanks for using this Script
