@@ -1,3 +1,4 @@
+#!/bin/bash
 for i in `cat`
 do
 echo "==$i=="; ssh -q $i uname -a;
