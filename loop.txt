@@ -1,16 +1,19 @@
-#!/bin/bash
-for i in `cat`
-do
-echo "==$i=="; ssh -q $i uname -a;
-done
+#! /bin/bash
 
-# for loop for finding kernel version of list of servers 
+echo "Enter your lucky number"
+read n
+if [ $n -eq 101 ];
+then
+echo "you got first prize "
+elif [ $n -eq 510 ];
+then
+echo "you got second prizee"
+elif [ $n -eq 999 ];
+then
+echo " you got 3rd prize"
+else
+echo" sorry for this time"
+fi
 
-for i in `cat`
-do
-echo "==$i=="; ssh -q $i ps -ef | grep -i pmon; 
-done
-
-#for loop for finding Database servers in list of servers 
 
 
